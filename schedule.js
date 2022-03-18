@@ -82,12 +82,13 @@ function y(text) {
 // y("textElevenqww")
 
 
+//input part
 const readline = require('readline')
     .createInterface({ input: process.stdin, output: process.stdout });
 
 function rec() {
     readline.question('enter a text  -- \n', name => {
-        y(name)
+        y(name)  //take input as text and passing the data in y function
         rec()
     });
 }
